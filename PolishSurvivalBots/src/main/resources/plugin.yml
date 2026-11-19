@@ -1,0 +1,13 @@
+name: PolishSurvivalBots
+version: 0.2.0
+main: pl.server.aiplayers.AIPlayersPaper
+api-version: '26.3'
+depend: [Citizens]
+commands:
+  aiplayers:
+    description: Zarządzanie polskimi botami AI
+    usage: /aiplayers <create|remove|list|follow|stop|reload>
+    permission: aiplayers.admin
+permissions:
+  aiplayers.admin:
+    default: op
