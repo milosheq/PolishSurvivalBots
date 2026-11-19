@@ -9,6 +9,7 @@ repositories {
     mavenCentral()
     maven { url = 'https://repo.papermc.io/repository/maven-public/' }
     maven { url = 'https://maven.citizensnpcs.co/repo' }
+    maven { url = 'https://repo.alessiodp.com/releases/' }
 }
 
 dependencies {
