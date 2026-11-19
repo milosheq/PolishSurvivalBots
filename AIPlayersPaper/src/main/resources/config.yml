@@ -1,0 +1,21 @@
+# Ustawienia AIPlayersPaper
+max-bots: 5
+
+# OpenAI-compatible API. Możesz użyć OpenAI albo lokalnego Ollama.
+ai:
+  # Dla Ollama, np. http://127.0.0.1:11434/v1/chat/completions
+  endpoint: "http://127.0.0.1:11434/v1/chat/completions"
+  api-key: ""
+  model: "mistral"
+  temperature: 0.8
+  max-tokens: 180
+
+chat:
+  # Bot odpowiada, gdy gracz zacznie wiadomość od: NazwaBota,
+  # Przykład: Kuba, co dziś robisz?
+  trigger-by-name: true
+  system-prompt: "Jesteś graczem Minecrafta na polskim serwerze survival. Mów naturalnie po polsku, krótko i swobodnie, jak człowiek na czacie. Masz własną osobowość, pamiętasz kontekst tej rozmowy i nie wspominaj, że jesteś modelem AI. Nie twierdź, że wykonałeś czynności w świecie, jeśli plugin ich faktycznie nie wykonał."
+
+bots:
+  # Lista botów utworzonych komendą /aiplayers create
+  names: []

@@ -1,0 +1,13 @@
+name: AIPlayersPaper
+version: 0.1.0
+main: pl.server.aiplayers.AIPlayersPaper
+api-version: '26.3'
+depend: [Citizens]
+commands:
+  aiplayers:
+    description: Zarządzanie polskimi botami AI
+    usage: /aiplayers <create|remove|list|follow|stop|reload>
+    permission: aiplayers.admin
+permissions:
+  aiplayers.admin:
+    default: op
